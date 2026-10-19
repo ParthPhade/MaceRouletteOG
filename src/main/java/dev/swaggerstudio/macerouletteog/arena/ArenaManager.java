@@ -1,7 +1,6 @@
 package dev.swaggerstudio.macerouletteog.arena;
 
 import dev.swaggerstudio.macerouletteog.MaceRouletteOG;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -31,7 +30,14 @@ public class ArenaManager {
     public void loadArenasFromFile() {
         arenasFile = new File(plugin.getDataFolder(), "arenas.yml");
         if (!arenasFile.exists()) {
-            plugin.saveResource("arenas.yml", false);
+            try {
+                if (!plugin.getDataFolder().exists()) {
+                    plugin.getDataFolder().mkdirs();
+                }
+                arenasFile.createNewFile();
+            } catch (IOException e) {
+                plugin.getLogger().severe("Could not create arenas.yml: " + e.getMessage());
+            }
         }
         arenasConfig = YamlConfiguration.loadConfiguration(arenasFile);
         arenas.clear();
