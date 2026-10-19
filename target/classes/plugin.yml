@@ -1,0 +1,27 @@
+name: MaceRouletteOG
+version: '1.0.0-SNAPSHOT'
+main: dev.swaggerstudio.macerouletteog.MaceRouletteOG
+api-version: '1.21'
+folia-supported: true
+authors: [ SwaggerStudio ]
+description: High-performance Paper & Folia Mace Roulette minigame.
+softdepend:
+  - PlaceholderAPI
+  - Vault
+
+commands:
+  maceroulette:
+    aliases: [ mr, mrog ]
+    description: Main command for MaceRouletteOG
+    permission: macerouletteog.player
+  mrogsetup:
+    description: Setup arenas using the wand
+    permission: macerouletteog.admin
+
+permissions:
+  macerouletteog.player:
+    description: Allows joining and viewing Mace Roulette arenas
+    default: true
+  macerouletteog.admin:
+    description: Allows setting up arenas, reloading, and forcing rounds
+    default: op

@@ -1,0 +1,37 @@
+# =====================================================================
+# MaceRouletteOG - Global Configuration
+# =====================================================================
+
+settings:
+  # Default countdown time in seconds before the match starts when min players are met
+  lobby-countdown: 10
+  # Duration of the spinning roulette phase in seconds
+  spin-duration: 4
+  # Duration of the active hunter round in seconds
+  round-duration: 15
+  # Elimination mode: 
+  #   HUNTER_SAFE -> Wielder is safe unless timer runs out without a kill.
+  #   MISS_EQUALS_DIE -> Wielder dies instantly if they hit the ground without a kill.
+  elimination-mode: "HUNTER_SAFE"
+  # Minimum players required to start an arena match
+  min-players: 2
+  # Maximum players allowed in a single arena
+  max-players: 12
+
+database:
+  # Choose storage type: SQLITE or MYSQL
+  type: "SQLITE"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "maceroulette"
+    username: "root"
+    password: "password"
+    pool-size: 10
+
+sounds:
+  wheel-tick: "BLOCK_NOTE_BLOCK_HAT"
+  wheel-stop: "ENTITY_LIGHTNING_BOLT_THUNDER"
+  wielder-chosen: "ENTITY_WITHER_SPAWN"
+  round-start: "EVENT_RAID_HORN"
+  smash-hit: "ITEM_MACE_SMASH_AIR" # Falls back safely if unsupported on older subversions

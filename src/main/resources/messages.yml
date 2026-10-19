@@ -1,0 +1,35 @@
+# =====================================================================
+# MaceRouletteOG - Messages (MiniMessage Format)
+# =====================================================================
+
+prefix: "<gradient:#ff5555:#ffaa00><bold>[MaceRoulette]</bold></gradient> "
+
+commands:
+  no-permission: "<red>You do not have permission to execute this command."
+  player-only: "<red>This command can only be executed by players."
+  unknown-subcommand: "<red>Unknown subcommand. Use <yellow>/mr help</yellow> for assistance."
+  arena-not-found: "<red>Arena '<yellow><arena></yellow>' does not exist."
+  arena-already-exists: "<red>Arena '<yellow><arena></yellow>' already exists."
+  arena-joined: "<green>You have successfully joined arena <yellow><arena></yellow>."
+  arena-left: "<yellow>You have left the arena."
+  arena-full: "<red>This arena is currently full."
+  arena-in-game: "<red>This arena has already started a match."
+
+game:
+  waiting-for-players: "<yellow>Waiting for more players... (<green><current></green>/<max> required)</yellow>"
+  countdown: "<gold>Match starting in <red><seconds></red> seconds!"
+  spin-start: "<light_purple><bold>SPINNING THE ROULETTE...</bold></light_purple>"
+  wielder-selected: "<gradient:#ff0000:#ffaa00><bold>CHOSEN HUNTER:</bold></gradient> <yellow><player></yellow>"
+  modifier-announced: "<cyan><bold>ROUND MODIFIER:</bold></cyan> <white><modifier_name></white> <gray>- <modifier_desc></gray>"
+  round-time-warning: "<red><bold>Warning!</bold> <white><seconds> seconds remaining to secure a kill!</white>"
+  wielder-failed: "<red><bold>Time expired!</bold> <yellow><player></yellow> failed to land a smash and was eliminated!"
+  wielder-success: "<green><bold>KILL SECURED!</bold> <yellow><victim></yellow> was smashed by <yellow><wielder></yellow>!"
+  player-eliminated: "<red><player> was eliminated from the arena.</red>"
+  game-won: "<gold><bold>WINNER!</bold> <yellow><player></yellow> won the match in arena <green><arena></green>!"
+
+setup:
+  wand-given: "<green>Given Setup Wand and Control Panel. Left-click/Right-click blocks to set bounds, Sneak + Right-click center."
+  bound-pos1: "<green>Arena Bound 1 set at <gray><loc></gray>."
+  bound-pos2: "<green>Arena Bound 2 set at <gray><loc></gray>."
+  center-set: "<green>Roulette Wheel Center set at <gray><loc></gray>."
+  saved: "<green>Arena <yellow><arena></yellow> successfully saved and enabled!"

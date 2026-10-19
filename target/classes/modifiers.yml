@@ -1,0 +1,50 @@
+# =====================================================================
+# MaceRouletteOG - Round Modifiers Configuration
+# =====================================================================
+
+modifiers:
+  tiny_player:
+    enabled: true
+    name: "Ant-Man (Tiny)"
+    description: "Everyone shrinks to 30% scale with tiny hitboxes!"
+    weight: 40
+    scale: 0.3
+
+  titan_mode:
+    enabled: true
+    name: "Titan Wielder"
+    description: "The wielder grows massive and gains step height!"
+    weight: 30
+    wielder-scale: 2.2
+
+  moon_gravity:
+    enabled: true
+    name: "Moon Gravity"
+    description: "Gravity is drastically reduced for all players."
+    weight: 35
+    gravity-multiplier: 0.25
+
+  miss_equals_die:
+    enabled: true
+    name: "Miss = Die"
+    description: "If the wielder's smash misses, they explode instantly."
+    weight: 25
+
+  double_trouble:
+    enabled: true
+    name: "Double Trouble"
+    description: "Two players are selected as wielders simultaneously!"
+    weight: 20
+    wielder-count: 2
+
+  bouncy_castle:
+    enabled: true
+    name: "Bouncy Castle"
+    description: "The floor acts like a giant trampoline."
+    weight: 30
+
+  ice_rink:
+    enabled: true
+    name: "Ice Rink"
+    description: "Friction drops to zero and speed is boosted."
+    weight: 30
