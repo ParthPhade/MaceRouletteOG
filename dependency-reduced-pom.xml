@@ -4,7 +4,7 @@
   <groupId>dev.swaggerstudio.macerouletteog</groupId>
   <artifactId>MaceRouletteOG</artifactId>
   <name>MaceRouletteOG</name>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1</version>
   <build>
     <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
     <defaultGoal>clean package</defaultGoal>
